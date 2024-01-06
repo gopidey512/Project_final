@@ -24,6 +24,7 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 ul,ol {
@@ -32,6 +33,26 @@ ul,ol {
 
 a:active, a:link, a:visited {
   text-decoration: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 
@@ -55,9 +76,6 @@ Navbar Section Start
   background-color: #e7f5ff;
 }
 
-/* .header .logo {
-  height: 3rem;
-} */
 
 .header .logo {
   /* height: 3rem; */
@@ -66,11 +84,17 @@ Navbar Section Start
   align-items: center;
 }
 
-.header .logo a{
-  font-size: 2.2rem;
-  color: red;
-  font-weight: 700;
-  letter-spacing: 0.1rem;
+.header .logo {
+  width: 15rem;
+  height: 50px;
+  z-index: 1000;
+}
+
+
+.header .logo img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .navbar-list {
@@ -120,7 +144,7 @@ Our Main Hero Section Start
 
 .section-hero .main-heading {
   padding: 2.2rem;
-  font-size: 4rem;
+  /* font-size: 4rem; */
   text-align: center;
 }
 
@@ -129,12 +153,12 @@ Our Main Hero Section Start
 }
 
 .para-1 {
-  font-size: 2rem;
+  /* font-size: 2rem; */
   text-align: center;
 }
 
 .company-name {
-  font-size: 3rem;
+  /* font-size: 3rem; */
   padding: 2rem 0;
 }
 
@@ -148,13 +172,14 @@ Our Main Hero Section Start
   object-fit: cover;
   width: 100%;
   height: 40rem;
+  padding: 0 0;
 }
 
 .welcome-para {
   text-align: center;
   position: absolute;
   top: 15rem;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   letter-spacing: 0.1rem;
   line-height: 4rem;
 }
@@ -173,7 +198,7 @@ Services Section Start
 ======================================= */
 
 .container{
-  background:linear-gradient(45deg, blueviolet, lightgreen);
+  background:linear-gradient(45deg, rgb(44, 41, 47), rgb(254, 254, 254));
   padding-bottom: 100px;
 }
 
@@ -183,13 +208,15 @@ Services Section Start
   padding-bottom: 15px;
   color:#fff;
   text-shadow: 0 5px 10px rgba(0,0,0,.2);
-  font-size: 50px;
+  /* font-size: 50px; */
 }
 
 .container .box-container{
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:8rem;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10rem;
+  overflow: hidden;
+  place-items: center;
 }
 
 .container .box-container .box{
@@ -197,34 +224,39 @@ Services Section Start
   border-radius: 20px;
   background: #fff;
   text-align: center;
-  height: 55rem;
+  height: 40rem;
+  overflow: hidden;
+  width: 100%;
+
 }
 
 .container .box-container .box img{
   object-fit: cover;
-  height: 60%;
+  height: 50%;
   width: 100%;
   /* border-radius: 20px; */
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  transition: all ease 0.7s;
+
 
 }
 
 .container .box-container .box h3{
   color:#0b0b0b;
-  font-size: 22px;
+  /* font-size: 22px; */
   padding:10px 0;
   text-align: center;
 }
 
 .container .box-container .box p{
   color:#0c0c0c;
-  font-size: 15px;
+  /* font-size: 15px; */
   line-height: 1.8;
 }
 
-.container .box-container .box:hover{
-  box-shadow: 0 10px 15px rgba(0,0,0,.3);
+.container .box-container .box:hover img{
+  box-shadow: 0 10px 15px rgba(120, 107, 107, 0.3);
   transform: scale(1.02);
 }
 
@@ -244,25 +276,25 @@ Our Contact Us Section Start
 }
 
 .contact-us h2 {
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   margin-bottom: 20px;
   color: #333;
 }
 
 .contact-us p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   color: #666;
   margin-bottom: 40px;
 }
 
 .get-in-touch h3 {
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   margin-bottom: 10px;
   color: #333;
 }
 
 .get-in-touch p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   color: #666;
   margin-bottom: 40px;
 }
@@ -272,13 +304,13 @@ Our Contact Us Section Start
 }
 
 .contact-us-data h3 {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   margin-bottom: 10px;
   color: #333;
 }
 
 .contact-us-data p {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   color: #666;
 }
 
@@ -354,6 +386,7 @@ Responsive Codes
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    z-index: 999;
   }
 
   .navbar-list {
@@ -393,17 +426,3 @@ Responsive Codes
     width: 60%;
   } */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
