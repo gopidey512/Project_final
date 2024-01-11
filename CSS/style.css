@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@300&family=Roboto+Condensed:ital@1&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ===========================================
@@ -27,34 +27,36 @@ a {
   display: inline-block;
 }
 
-ul,ol {
+ul,
+ol {
   list-style-type: none;
 }
 
-a:active, a:link, a:visited {
+a:active,
+a:link,
+a:visited {
   text-decoration: none;
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
 }
 
 h2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
 }
 
 h4 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 p {
   font-size: 1.6rem;
 }
-
 
 /* ===========================================
 Reusable Class
@@ -73,25 +75,19 @@ Navbar Section Start
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e7f5ff;
+  background-color: #2599ed;
 }
 
-
 .header .logo {
-  /* height: 3rem; */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-}
-
-.header .logo {
   width: 15rem;
-  height: 50px;
+  height: 5rem;
   z-index: 1000;
 }
 
-
-.header .logo img{
+.header .logo img {
   width: 100%;
   object-fit: cover;
   object-position: center;
@@ -99,23 +95,22 @@ Navbar Section Start
 
 .navbar-list {
   display: flex;
-  gap: 4.8rem;
+  gap: 4rem;
 }
 
 .navbar-link:link,
 .navbar-link:visited {
   display: inline-block;
-  text-transform: uppercase;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 500;
-  color: #212529;
+  color: #f9f9f9;
   transition: all ease 0.3s;
 }
 
 .navbar-link:hover,
 .navbar-link:active {
-  color: #364fc7;
+  color: #0f0f10;
 }
 
 .mobile-navbar-btn {
@@ -137,100 +132,101 @@ Navbar Section Start
 /* ===========================================
 Our Main Hero Section Start
 ======================================= */
-.section-hero {
-  background-color: #a5d8ff;
-  height: auto;
+
+.home-section {
+  height: calc(100vh - 7rem); 
+  background-color: #f2f2f2;
 }
 
-.section-hero .main-heading {
-  padding: 2.2rem;
-  /* font-size: 4rem; */
-  text-align: center;
+.home-section .content {
+  padding-top: 5rem;
 }
 
-.main-heading .company-name {
+.home-section .content marquee .main-heading{
+  letter-spacing: 0.4rem;
+  word-spacing: 1.8rem;
+  font-size: 5rem;
+}
+
+.home-section .content marquee .main-heading span {
   color: rgb(214, 46, 24);
 }
 
-.para-1 {
-  /* font-size: 2rem; */
+.home-section .content p {
   text-align: center;
+  padding-top: 12rem;
+  font-size: 3rem;
+}
+
+/* ===========================================
+About Section Start
+======================================= */
+
+.about-section {
+  width: 100%;
+  height: 40rem;
+  background-color: #c4c9cd;
 }
 
 .company-name {
-  /* font-size: 3rem; */
-  padding: 2rem 0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.welcome-section-img {
+
+.welcome-section {
   width: 100%;
-  position: relative;
-  padding-bottom: 5rem;
+  height: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.welcome-section-img img{
-  object-fit: cover;
-  width: 100%;
-  height: 40rem;
-  padding: 0 0;
-}
-
-.welcome-para {
+.welcome-section .welcome-para {
   text-align: center;
-  position: absolute;
-  top: 15rem;
-  /* font-size: 2rem; */
   letter-spacing: 0.1rem;
   line-height: 4rem;
-}
-
-
-
-
-
-
-
-
-
+} 
 
 /* ===========================================
 Services Section Start
 ======================================= */
 
-.container{
-  background:linear-gradient(45deg, rgb(44, 41, 47), rgb(254, 254, 254));
-  padding-bottom: 100px;
+.container {
+  background: linear-gradient(45deg, rgb(44, 41, 47), rgb(195, 171, 171));
+  padding-bottom: 5rem;
 }
 
-.container .heading{
+.heading {
   padding-top: 2rem;
   text-align: center;
-  padding-bottom: 15px;
-  color:#fff;
-  text-shadow: 0 5px 10px rgba(0,0,0,.2);
-  /* font-size: 50px; */
+  padding-bottom: 2rem;
+  color: #0d0d0d;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.container .box-container{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+.container .box-container {
+  display: flex;
+  justify-content: space-around;
   gap: 10rem;
+  flex-wrap: wrap;
   overflow: hidden;
-  place-items: center;
 }
 
-.container .box-container .box{
-  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+.container .box-container .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background: #fff;
   text-align: center;
-  height: 40rem;
+  height: 50rem;
   overflow: hidden;
-  width: 100%;
-
+  width: 40rem;
 }
 
-.container .box-container .box img{
+.container .box-container .box img {
   object-fit: cover;
   height: 50%;
   width: 100%;
@@ -238,123 +234,81 @@ Services Section Start
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   transition: all ease 0.7s;
-
-
 }
 
-.container .box-container .box h3{
-  color:#0b0b0b;
+.container .box-container .box h3 {
+  color: #0b0b0b;
   /* font-size: 22px; */
-  padding:10px 0;
+  padding: 10px 0;
   text-align: center;
 }
 
-.container .box-container .box p{
-  color:#0c0c0c;
+.container .box-container .box p {
+  color: #0c0c0c;
   /* font-size: 15px; */
   line-height: 1.8;
 }
 
-.container .box-container .box:hover img{
+.container .box-container .box:hover img {
   box-shadow: 0 10px 15px rgba(120, 107, 107, 0.3);
   transform: scale(1.02);
 }
-
-
-
-
-
 
 /*======================================== 
 Our Contact Us Section Start
 ======================================== */
 
 .contact-us {
-  background-color: #70d7eb;
-  padding: 60px 0;
+  background-color: #bbe5ef;
+  padding-bottom: 6rem;
+}
+
+.contact {
+  padding-top: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: #0d0d0d;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us-para {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.contact-us .data {
+  margin: auto;
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0.5rem black;
+  border-radius: 2rem;
+  height: 30rem;
+  justify-content: space-around;
   text-align: center;
 }
 
-.contact-us h2 {
-  /* font-size: 2.5rem; */
-  margin-bottom: 20px;
-  color: #333;
+.contact-us .data .data1 p a {
+  color: #0b0b0b;
 }
-
-.contact-us p {
-  /* font-size: 1.1rem; */
-  color: #666;
-  margin-bottom: 40px;
-}
-
-.get-in-touch h3 {
-  /* font-size: 1.8rem; */
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.get-in-touch p {
-  /* font-size: 1.1rem; */
-  color: #666;
-  margin-bottom: 40px;
-}
-
-.contact-us-data {
-  margin-bottom: 40px;
-}
-
-.contact-us-data h3 {
-  /* font-size: 1.5rem; */
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.contact-us-data p {
-  /* font-size: 1.1rem; */
-  color: #666;
-}
-
-/* Media Query for smaller screens */
-/* @media screen and (max-width: 768px) {
-  .contact-us h2 {
-    font-size: 2rem;
-  }
-
-  .contact-us p {
-    font-size: 1rem;
-  }
-
-  .get-in-touch h3 {
-    font-size: 1.5rem;
-  }
-
-  .contact-us-data h3 {
-    font-size: 1.3rem;
-  }
-
-  .contact-us-data p {
-    font-size: 1rem;
-  }
-} */
-
-
-
-
-
-
-
-
 
 /* ===========================================
 Responsive Codes 
 ======================================= */
 
-
 @media (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+
+  .box-wrapper {
+    padding: 0 2.4rem;
+  }
+
   .mobile-navbar-btn {
     display: block;
     z-index: 999;
-    border: 3px solid #212529;
+    border: 0.3rem solid #212529;
     color: #212529;
   }
 
@@ -362,15 +316,11 @@ Responsive Codes
     position: relative;
   }
 
-  /* .header .logo {
-    width: 80%;
-  } */
-
   .navbar {
     display: none;
     width: 100%;
     height: 100vh;
-    background: #e7f5ff;
+    background-color: #2599ed;
     position: absolute;
     top: 0;
     left: 0;
@@ -379,7 +329,6 @@ Responsive Codes
     justify-content: center;
     align-items: center;
 
-    /* to get the tranisition  */
     transform: translateX(100%);
     transition: all 0.5s linear;
 
@@ -409,20 +358,27 @@ Responsive Codes
     display: none;
   }
 
-
-
-  .container .box-container{
-    grid-template-columns: repeat(1,1fr);
-    gap:4rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .box-wrapper {
-    padding: 0 2.4rem;
+  .container {
+    padding-bottom: 5rem;
   }
 
-  /* .header .logo {
-    width: 60%;
-  } */
+  .contact-us {
+    padding-bottom: 5rem;
+  }
+
+  .contact-us .data {
+    width: 30rem;
+  }
+
+  .container .box-container {
+    gap: 5rem;
+  }
+
+  .about-section {
+    height: 70rem;
+  }
+
+  .welcome-section {
+    height: 60rem;
+  }
 }
