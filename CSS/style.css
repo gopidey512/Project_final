@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Nunito+Sans:opsz@6..12&family=Poppins:wght@300&family=Roboto+Condensed:ital@1&display=swap");
 
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -72,15 +80,27 @@ Navbar Section Start
 
 .header {
   height: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-color: #2599ed;
 }
 
 .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 15rem;
   height: 5rem;
@@ -89,11 +109,15 @@ Navbar Section Start
 
 .header .logo img {
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
 .navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 4rem;
 }
@@ -105,6 +129,8 @@ Navbar Section Start
   font-size: 2rem;
   font-weight: 500;
   color: #f9f9f9;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
 }
 
@@ -134,7 +160,7 @@ Our Main Hero Section Start
 ======================================= */
 
 .home-section {
-  height: calc(100vh - 7rem); 
+  height: calc(100vh - 7rem);
   background-color: #f2f2f2;
 }
 
@@ -142,7 +168,7 @@ Our Main Hero Section Start
   padding-top: 5rem;
 }
 
-.home-section .content marquee .main-heading{
+.home-section .content marquee .main-heading {
   letter-spacing: 0.4rem;
   word-spacing: 1.8rem;
   font-size: 5rem;
@@ -173,12 +199,17 @@ About Section Start
   padding-bottom: 2rem;
 }
 
-
 .welcome-section {
   width: 100%;
   height: 28rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   background-position: center;
   background-size: cover;
@@ -189,13 +220,14 @@ About Section Start
   text-align: center;
   letter-spacing: 0.1rem;
   line-height: 4rem;
-} 
+}
 
 /* ===========================================
 Services Section Start
 ======================================= */
 
 .container {
+  background: -o-linear-gradient(45deg, rgb(44, 41, 47), rgb(195, 171, 171));
   background: linear-gradient(45deg, rgb(44, 41, 47), rgb(195, 171, 171));
   padding-bottom: 5rem;
 }
@@ -209,14 +241,19 @@ Services Section Start
 }
 
 .container .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   gap: 10rem;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   overflow: hidden;
 }
 
 .container .box-container .box {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background: #fff;
@@ -227,12 +264,15 @@ Services Section Start
 }
 
 .container .box-container .box img {
+  -o-object-fit: cover;
   object-fit: cover;
   height: 50%;
   width: 100%;
   /* border-radius: 20px; */
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+  -webkit-transition: all ease 0.7s;
+  -o-transition: all ease 0.7s;
   transition: all ease 0.7s;
 }
 
@@ -250,7 +290,10 @@ Services Section Start
 }
 
 .container .box-container .box:hover img {
+  -webkit-box-shadow: 0 10px 15px rgba(120, 107, 107, 0.3);
   box-shadow: 0 10px 15px rgba(120, 107, 107, 0.3);
+  -webkit-transform: scale(1.02);
+  -ms-transform: scale(1.02);
   transform: scale(1.02);
 }
 
@@ -279,11 +322,18 @@ Our Contact Us Section Start
 .contact-us .data {
   margin: auto;
   width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-shadow: 0 0 0.5rem black;
   box-shadow: 0 0 0.5rem black;
   border-radius: 2rem;
   height: 30rem;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   text-align: center;
 }
@@ -325,11 +375,25 @@ Responsive Codes
     top: 0;
     left: 0;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
+    -webkit-transform: translateX(100%);
+
+    -ms-transform: translateX(100%);
+
     transform: translateX(100%);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
     transition: all 0.5s linear;
 
     opacity: 0;
@@ -339,11 +403,18 @@ Responsive Codes
   }
 
   .navbar-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
   .active .navbar {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
