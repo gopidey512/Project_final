@@ -166,16 +166,18 @@ Our Main Hero Section Start
 
 .home-section .content {
   padding-top: 5rem;
+  text-align: center;
 }
 
-.home-section .content marquee .main-heading {
+.home-section .content .main-heading {
   letter-spacing: 0.4rem;
   word-spacing: 1.8rem;
   font-size: 5rem;
 }
 
-.home-section .content marquee .main-heading span {
-  color: rgb(214, 46, 24);
+.home-section .content .main-heading span {
+  /* color: rgb(214, 46, 24); */
+  color: black;
 }
 
 .home-section .content p {
