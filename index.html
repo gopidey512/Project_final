@@ -1,167 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="UTF-8" />
     <meta name="description" content="Enhance your safety and security with our comprehensive services. We specialize in CCTV surveillance, fire alarm systems, and access control solutions. From installation to maintenance, our expert team ensures top-notch security for homes and businesses. Explore our range of services to safeguard your premises effectively.">
     <meta name="keywords" content="CCTV, security cameras, surveillance, video monitoring, home security, business security, CCTV installation, security systems">
     <meta name="author" content="Gopinath Dey">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Enterprino Solutions Pvt Ltd</title>
+    <title>Enterprino Solutions Private Limited</title>
+
+    <!-- Google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootstrap icons cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- scroll animation css link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- custom css link -->
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
-  <body>
-    <!-- ======================================== 
-          Our Navbar Section Start  
-    ========================================  -->
 
-    <header class="header box-wrapper">
+  <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
 
+    <!-- ======= Header ======= -->
 
-      <a href="#home" class="logo"><img
-        src="images/logo/company-logo - Copy.jpg"
-        alt="Company Logo"
-      /></a>
-
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li><a class="navbar-link" href="#home">Home</a></li>
-          <li><a class="navbar-link" href="#about">About</a></li>
-          <li><a class="navbar-link" href="#services">Services</a></li>
-          <li><a class="navbar-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
-      <div class="mobile-navbar-btn">
-        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+    <header id="header" class="header fixed-top z-index-555" data-scrollto-offset="0">
+      <div class="container-fluid d-flex align-items-center justify-content-between">
+  
+        <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+          <img src="images/logo/company-logo.jpg" alt="Company Logo">
+        </a>
+  
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="#">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>        
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav>  
+  
       </div>
     </header>
+  
 
-    <!-- ======================================== 
-          Our Main Hero Section Start  
-    ========================================  -->
+    <!-- ============ Main Section our Website ============== -->
 
-    <section class="home-section box-wrapper id="home">
-      <div class="content">
-          <h1 class="main-heading">Welcome to <span class="company-name">ENTERPRINO</span></h1>
-        
-        <p>We are Dedicated to become the benchmark for service excellence. We are
-          Committed for Client Satisfaction.</p>
+    <main id="main">
+
+      <!-- ====== Hero Section ========= -->
+
+      <section id="hero" class="hero d-flex align-items-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative aos-init aos-animate" data-aos="zoom-out">
+          <h2>Welcome to <span>Enterprino</span></h2>
+          <p>We are Dedicated to become the benchmark for service excellence. We are Committed for Client Satisfaction.</p>
+        </div>
+      </section>
+  
+
+
+      <!-- ======= About Section ======= -->
+
+      <section id="about" class="about">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>About Us</h2>
+            <h3>Enterprino Solutions Private Limited</h3>
+            <p>We are specialized in the field of Fire, Life Safety, and Security Systems industry. Our well-experienced teams of Engineers and technicians are able to
+              Design, Install and Commission the system. We offer a wide range of customized solution to meet various customer requirements with the best quality in
+              the market . Our Dedicated team is always available 24/7 to support you.</p>
+          </div>
+  
+        </div>
+      </section>
+  
+      <!-- ======= Services Section ======= -->
+
+      <section id="services" class="services">
+        <div class="container aos-init aos-animate" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Our Services</h2>
+          </div>
+  
+          <div class="row gy-5">
+              
+            <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+              <div class="service-item">
+                <div class="img">
+                  <img src="images/services/fire_detection_system.jpg" class="img-fluid" alt="Fire Detection System">
+                </div>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-fire"></i>
+                  </div>
+                  <a href="#" class="stretched-link">
+                    <h3>Fire Detection System</h3>
+                  </a>
+                  <p>We execute project work like Design, Installation, Testing, and Commissioning , Annual Maintenance contract and one time maintenance works of Fire Detection in Residential,
+                    Industrial, Commercial, Hotel, Schools, etc.</p>
+                </div>
+              </div>
+            </div>          
+  
+            <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+              <div class="service-item">
+                <div class="img">
+                  <img src="images/services/security_system.png" class="img-fluid" alt="Security System">
+                </div>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <a href="#" class="stretched-link">
+                    <h3>Security System</h3>
+                  </a>
+                  <p>We offer unparalleled experience in the Design, Installation, and Maintenance of Integrated Electronic Security Systems for corporate workplaces, commercial, Public & Industrial
+                    Facilities.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
+              <div class="service-item">
+                <div class="img">
+                  <img src="images/services/Elv_system.jpg" class="img-fluid" alt="ELV System">
+                </div>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-battery-charging"></i>
+                  </div>
+                  <a href="#" class="stretched-link">
+                    <h3>ELV System</h3>
+                  </a>
+                  <p>We specialize in providing cutting-edge ELV systems that redefine safety, efficiency, and creativity.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="500">
+              <div class="service-item">
+                <div class="img">
+                  <img src="images/services/Bms.jpg" class="img-fluid" alt="Building Management System">
+                </div>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-buildings"></i>
+                  </div>
+                  <a href="#" class="stretched-link">
+                    <h3>Building Management System</h3>
+                  </a>
+                  <p>We provide a complete BMS solution that controls and monitors the building's mechanical and electrical equipment.</p>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-xl-4 col-md-6 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="700">
+              <div class="service-item">
+                <div class="img">
+                  <img src="images/services/general_trading.png" class="img-fluid" alt="General Trading">
+                </div>
+                <div class="details position-relative">
+                  <div class="icon">
+                    <i class="bi bi-chat-square-text"></i>
+                  </div>
+                  <a href="#" class="stretched-link">
+                    <h3>General Trading</h3>
+                  </a>
+                  <p>We are engaged in Import-Export of various products such as Steel, Electronic, Instrumentation products. Our skilled and knowledgeable employees who are directly in contact with our associate manufacturer to deliver good quality products to our customers on time.</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+
+  
+      <!-- ======= Contact Section ======= -->
+
+      <section id="contact" class="contact">
+        <div class="container">
+  
+          <div class="section-header">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or concerns about our security systems or services, please don't hesitate to contact us.</p>
+          </div>
+  
+        </div>
+  
+        <div class="container">
+  
+          <div class="row gy-5 gx-lg-5 justify-content-center">
+  
+            <div class="col-lg-8">
+  
+              <div class="info">
+                <h3>Get in touch</h3>
+                <p>We are here to help you protect what matters most.</p>
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Location:</h4>
+                    <p>Srikrishnapur, Dasghara, Hoogly, West Bengal - 712402</p>
+                  </div>
+                </div>
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p>info@enterprino.com</p>
+                  </div>
+                </div>
+  
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Call:</h4>
+                    <p>+91 7029419908</p>
+                  </div>
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+  
+        </div>
+      </section>
+  
+    </main>
+
+  
+    <!-- ======= Footer Section ======= -->
+
+    <footer id="footer" class="footer">
+  
+      <div class="footer-content">
+        <div class="container">
+          <div class="row justify-content-sm-between">
+  
+            <div class="col-md-8">
+              <div class="footer-info">
+                <h3>Enterprino Solutions Private Limited</h3>
+                <p>
+                  Srikrishnapur, Dasghara, Hoogly, West Bengal - 712402<br><br>
+                  <strong>Phone:</strong> +91 7029419908<br>
+                  <strong>Email:</strong> info@enterprino.com<br>
+                </p>
+              </div>
+            </div>
+  
+            <div class="col-md-2 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="#main">Home</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#about">About us</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+  
+  
+    </footer>
+  
+  
+    
+    <!-- Bootstrap js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- scroll animation js link -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- custom js link -->
+    <script src="JS/main.js"></script>
 
-
-    <!-- ======================================== 
-          Our About Section Start  
-    ========================================  -->
-
-    <section class="about-section" id="about">
-      <h2 class="company-name box-wrapper">Enterprino Solutions Private Limited</h2>
-      <div class="welcome-section">
-        <h3 class="welcome-para box-wrapper">We are specialized in the field of Fire, Life Safety, and Security Systems industry. Our well-experienced teams of Engineers and technicians are able to
-          Design, Install and Commission the system. We offer a wide range of customized solution to meet various customer requirements with the best quality in
-          the market . Our Dedicated team is always available 24/7 to support you.</h3>
-      </div>
-    </section>
-
-    <!-- ======================================== 
-          Our Service Section Start  
-    ========================================  -->
-
-    <section class="container box-wrapper">
-      <h2 class="heading" id="services">Our Services</h2>
-
-      <div class="box-container">
-        <div class="box">
-          <img src="images/services-image/service3.jpg" alt="Fire Detection System" />
-          <h3>Fire Detection System</h3>
-          <p>
-            We execute project work like Design, Installation, Testing, and
-            Commissioning , Annual Maintenance contract and one time maintenance
-            works of Fire Detection in Residential, Industrial, Commercial,
-            Hotel, Schools, etc
-          </p>
-        </div>
-
-        <div class="box">
-          <img src="images/services-image/service4.jpg" alt="Security System" />
-          <h3>Security System</h3>
-          <p>
-            We offer unparalleled experience in the Design, Installation, and
-            Maintenance of Integrated Electronic Security Systems for corporate
-            workplaces, commercial, Public & Industrial Facilities
-          </p>
-        </div>
-
-        <div class="box">
-          <img src="images/services-image/service3.jpg" alt="ELV System" />
-          <h3>ELV System</h3>
-          <p>
-            We specialize in providing cutting-edge ELV systems that redefine
-            safety, efficiency, and creativity
-          </p>
-        </div>
-
-        <div class="box">
-          <img src="images/services-image/service3.jpg" alt="ELV System" />
-          <h3>ELV System</h3>
-          <p>
-            We specialize in providing cutting-edge ELV systems that redefine
-            safety, efficiency, and creativity
-          </p>
-        </div>
-
-        <div class="box">
-          <img src="images/services-image/service3.jpg" alt="Building Management System" />
-          <h3>Building Management System</h3>
-          <p>
-            We provide a complete BMS solution that controls and monitors the
-            building's mechanical and electrical equipment
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================== 
-          Our Contact Us Section Start  
-    ========================================  -->
-
-    <section class="contact-us box-wrapper">
-      <h2 class="contact" id="contact">Contact Us</h2>
-      <p class="contact-us-para">
-        If you have any questions or concerns about our security systems or
-        services, please don't hesitate to contact us.
-      </p>
-
-      <div class="data">
-        <div class="data1">
-          <h3>Location</h3>
-          <p>Address</p>
-        </div>
-        <div class="data1">
-          <h3>Email</h3>
-          <p><a href="mailto:info@Enterprino.com" class="link">info@Enterprino.com</a></p>
-        </div>
-        <div class="data1">
-          <h3>Call</h3>
-          <p><a href="tel:+91 1234567890">+91 1234567890</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ======================================== 
-          Our JavaScript Section Start  
-    ========================================  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="main.js"></script>
-
+    <script>
+      AOS.init();
+    </script>
+   
   </body>
 </html>
